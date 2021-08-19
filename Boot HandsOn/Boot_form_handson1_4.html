@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style >
+	   #btn{
+	      background-color:green;
+		  radius:0;
+	   }
+	</style>
+	<title>Form Demo</title>
+	
+  </head>
+  <body>
+  
+     <div class="container">
+	 <h1> New Employee </h1>
+	 <form>
+	 <div class="row">
+	   <div class="col-md-4">
+	      <div class="form-group">
+	         <label for="firstName">First Name</label>
+	         <input type="text" class="form-control" id="firstName" >
+	       </div>
+	    </div>
+		
+		<div class="col-md-4">
+	      <div class="form-group">
+	         <label for="middleName">Middle Name</label>
+	         <input type="text" class="form-control" id="middleName" >
+	       </div>
+	    </div>
+		
+		 <div class="col-md-4">
+	      <div class="form-group">
+	         <label for="lastName">Last Name</label>
+	         <input type="text" class="form-control" id="lastName" >
+	       </div>
+	    </div>
+	 </div>
+	 
+    
+	   <div class="row">
+	    <div class="col-md-6">
+	      <div class="form-group">
+	         <label for="addressLine1">Address Line 1</label>
+	         <input type="text" class="form-control" id="addressLine1" >
+	       </div>
+	    </div>
+		
+		<div class="col-md-6">
+	      <div class="form-group">
+	         <label for="addressLine2">Address Line 2</label>
+	         <input type="text" class="form-control" id="addressLine2" >
+	       </div>
+	    </div>
+	   
+	   </div>
+		 
+	<div class="row">
+	     <div class="col-md-6">
+		     <div class="form-group">
+			    <label for="email">Email</label>
+				<input type="email" class="form-control" id="email">
+			 </div>
+		 </div>
+	 	 
+	     <div class="col-md-3">
+		     <div class="form-group">
+			    <label for="pass">Password</label>
+	            <input type="password" class="form-control" id="pass">
+			 </div>
+		 </div>
+		 
+		 <div class="col-md-3">
+		     <div class="form-group">
+			    <label for="confirmPass">Confirm Password</label>
+	            <input type="password" class="form-control" id="confirmPass">
+			 </div>
+		 </div>
+	</div>
+	
+	<div class="row">
+	     <div class="col-md-3">
+		     <div class="form-group">
+			    <label for="department">Department</label>
+				<select for="department" class="form-control">
+				   <option value="chooseDepartment">Choose Department</option>
+				   <option value="Admin">Admin </option>
+				   <option value="Production">Production </option>
+				   <option value="Operations"> Operations</option>
+				   <option value="General">General</option>
+				   <option value="HR">HR</option>
+				</select>
+			 </div>
+		 </div>
+	 	 
+	     <div class="col-md-3">
+		     <div class="form-group">
+			     <label for="dateOfBirth">Date of Birth</label>
+                 <input type="date" class="form-control" id="dateOfBirth">
+			 </div>
+		 </div>
+		 
+		 <div class="col-md-3">
+		     <div class="form-group">
+			 <label for="gender">Gender</label> <br>
+	          
+			  <div class="form-check-inline">
+			   <input type="radio" class="form-check-input" id="mlae" name="gender" >
+				<label class="form-check-label" for="male">Male</label>
+			  </div>
+			  <div class="form-check-inline">
+				<input type="radio" class="form-check-input" id="femlae" name="gender">
+				<label class="form-check-label" for="female">Female</label>
+               </div>			
+			</div>
+		 </div>
+		 
+		 <div class="col-md-3">
+		     <div class="form-check">
+			    <label class="form-check-label" for="remember">Permanent</label> <br>
+				<div class="form-check">
+			   <input type="checkbox" class="form-check-input" id="remember"> 
+			   </div>
+		 </div>
+	</div>
+    
+	 
+	 </div class="row">
+	   <div class="col-sm-2">
+	     <button type="submit" class="btn btn-primary" id="btn">Save</button>
+	   </div>
+	 </div>
+	 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
