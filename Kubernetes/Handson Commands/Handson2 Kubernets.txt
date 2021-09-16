@@ -1,0 +1,22 @@
+Microsoft Windows [Version 10.0.19043.1165]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\naidu>minikube start
+* minikube v1.23.0 on Microsoft Windows 10 Pro 10.0.19043 Build 19043
+* Using the docker driver based on existing profile
+
+X Exiting due to PROVIDER_DOCKER_NOT_RUNNING: deadline exceeded running "docker version --format -": exit status 1
+* Suggestion: Restart the Docker service
+* Documentation: https://minikube.sigs.k8s.io/docs/drivers/docker/
+
+
+C:\Users\naidu>kubectl get pods
+NAME           READY   STATUS    RESTARTS        AGE
+greetservice   1/1     Running   1 (6m46s ago)   20h
+service        1/1     Running   1 (6m46s ago)   20h
+
+C:\Users\naidu>kubectl port-forward service 8080:8080
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+Handling connection for 8080
+Handling connection for 8080

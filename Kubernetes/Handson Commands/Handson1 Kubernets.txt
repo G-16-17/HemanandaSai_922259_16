@@ -1,0 +1,38 @@
+Microsoft Windows [Version 10.0.19043.1165]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\naidu>minikube version
+minikube version: v1.23.0
+commit: 5931455374810b1bbeb222a9713ae2c756daee10
+
+C:\Users\naidu>minikube start
+* minikube v1.23.0 on Microsoft Windows 10 Pro 10.0.19043 Build 19043
+* Using the docker driver based on existing profile
+* Starting control plane node minikube in cluster minikube
+* Pulling base image ...
+* Restarting existing docker container for "minikube" ...
+* Preparing Kubernetes v1.22.1 on Docker 20.10.8 ...
+* Verifying Kubernetes components...
+! Executing "docker container inspect minikube --format={{.State.Status}}" took an unusually long time: 2.4001972s
+* Restarting the docker service may improve performance.
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* Enabled addons: storage-provisioner, default-storageclass
+* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
+C:\Users\naidu>minikube status
+! Executing "docker container inspect minikube --format={{.State.Status}}" took an unusually long time: 4.6402093s
+* Restarting the docker service may improve performance.
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+
+C:\Users\naidu>minikube stop status
+* Stopping node "minikube"  ...
+* Powering off "minikube" via SSH ...
+* 1 nodes stopped.
+
+C:\Users\naidu>
